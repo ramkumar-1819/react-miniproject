@@ -91,7 +91,7 @@ export default class Home extends Component{
     }
     render(){
         return(
-            <Router>
+            <Router basename={window.location.pathname || ''}>
                 <>
                 <Switch>
                 <Route exact path="/">
