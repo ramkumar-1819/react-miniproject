@@ -1,0 +1,25 @@
+#table{
+    margin: auto;
+    width:500px;
+}
+table,th,td,tr{
+    position: relative;
+    border:1px solid black;
+    border-collapse: collapse;
+}
+#tot{
+    position: absolute;
+    right: 10px;
+    font-weight: bold;
+}
+td{
+    text-align: center;
+}
+.bill >h1{
+    color: green;
+    text-align: center;
+}
+.adds{
+    width:300px;
+    margin: 20px auto;
+}

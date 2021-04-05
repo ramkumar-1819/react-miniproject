@@ -1,0 +1,107 @@
+
+*{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*styling the inc_dec button*/
+
+.inputs>button{
+    outline: none;
+    border:1px solid blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+.inputs>input{
+    margin: 0 2px;
+}
+/*styling the items we received from api*/
+
+#list{
+    width:75%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.items img{
+    width:200px;
+    height: 200px;
+    cursor: pointer;
+}
+#list input{
+    width:50px;
+    text-align: center;
+    outline: none;
+    border:1px solid blue;
+}
+/*styling add to cart button*/
+
+.items>button{
+    outline: none;
+    width:100px;
+    margin-top: 2px;
+    border:1px solid black;
+    color:white;
+    height:30px;
+    background-color: rgb(34, 34, 240);
+}
+/*styling the each item details*/
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.items>div:nth-child(2){
+    color: blue;
+}
+.cart{
+    display: none;
+}
+/*this section appears when cart button is cliked*/
+#popup_section{
+    display: none;
+    opacity: 0.7;
+    width:100%;
+    height:100vh;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    background-color: white;
+}
+/*styling the confirmation popup*/
+.popup{
+    border: 2px solid black;
+    background-color: white;
+    display: none;
+    position: fixed;
+    top:270px;
+    left:470px;
+    width:350px;
+    height:100px;
+}
+.popup>div{
+    text-indent: 5px;
+    font-weight: bold;
+}
+.popup button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color:blue;
+    font-weight:bolder;
+    background-color: white;
+}
+.popup>div:nth-child(2){
+    position:absolute;
+    right: 0;
+    width:200px;
+    display: flex;
+    justify-content: space-around;
+    height:70px;
+    align-items: center;
+}

@@ -1,0 +1,26 @@
+.header{
+    margin: auto;
+    align-items: center;
+    width:98%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+#cart_list{
+  cursor: pointer;
+}
+#total{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:blue;
+    color: white;
+    font-size: smaller;
+    text-align: center;
+    width:20px;
+    height:20px;
+    border-radius: 10px;
+}
+.header>h1{
+    color: green;
+}
